@@ -1,3 +1,11 @@
+/* asterik * general selector that grabs everything on the screen */
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
 /* Two things to identify to use CSS
 ONE: What are we affecting?
 we are affecting an h1 tag
@@ -11,10 +19,12 @@ h1 {
     color:darkolivegreen;
     text-align: center;
     font-size: 50px;
+    margin: 15px;
 }
 
 p {
     background-color: aquamarine;
+    padding: 10px;
 }
 
 /* use a period . for classes 
@@ -35,4 +45,23 @@ tag < class < id */
 
 .italics{
     font-style: italic;
+}
+
+ol {
+    padding-left: 40px;
+}
+
+td {
+    padding: 10px;
+}
+
+.about {
+    width: 800px;
+    display:inline-block;
+    margin: 20px;
+    vertical-align: top;
+}
+
+img {
+    margin-left: 20px;
 }
