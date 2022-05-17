@@ -1,0 +1,38 @@
+#container{
+    /* background-color: rgb(128, 128, 128); */
+    margin:100px;
+    overflow: hidden; /* this prevents children divs from collapsing */
+    height: auto;
+}
+
+#search, #plus, #create  {
+    padding: 20px;
+}
+
+#search button, #plus button, #create button {
+    font-size:200%;
+    color:white;
+    border: 2px solid;
+}
+
+#search button{
+    color:darkcyan;
+    background-color: ghostwhite;
+    border-color: darkcyan;
+    border-radius: 20px;
+    padding: 0px 50px;
+}
+
+#plus button {
+    background-color: aquamarine;
+    font-size:300%;
+    border: transparent;
+    border-radius: 50%;
+    padding: 0px 15px;
+}
+
+#create button {
+    background-color: royalblue;
+    border-color: black;
+    box-shadow: 5px 5px black;
+}
