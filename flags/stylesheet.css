@@ -6,7 +6,7 @@
 
 div {
     display: inline-block;
-
+/* jamacian */
 }
 .yellowbase{
     background-color:#FED100;
@@ -51,4 +51,156 @@ div {
     border-right: 200px solid black;
     left: 300px;
     top: 50px;
+}
+
+/* greece */
+.whitebase{
+    background-color: #0D5EAF;
+    width: 600px;
+    height:360px;
+    position:absolute;
+    top: 400px;
+    border: 1px solid black;
+}
+.WhiteVertical {
+    width: 35px;
+    height:180px;
+    background-color:white;
+    left: 75px;
+}
+
+.WhiteHorizontal {
+    width: 180px;
+    height: 35px;
+    background-color:white;
+    top: 75px;
+}
+
+.WhiteHorizontalLong {
+    width: 600px;
+    height: 35px;
+    background-color:white;
+}
+
+.WhiteHorizontalLong#top {
+    top: 180px;
+}
+
+.WhiteHorizontalLong#bottom {
+    top: 270px;
+}
+
+.WhiteHorizontalShort {
+    width: 420px;
+    height: 35px;
+    background-color:white;
+    left:180px;
+}
+
+.WhiteHorizontalShort#top {
+    top: 40px;
+}
+
+.WhiteHorizontalShort#bottom {
+    top: 110px;
+}
+
+/* rainbow */
+.rainbowbase{
+    background-color: black;
+    width: 600px;
+    height:360px;
+    position:absolute;
+    top: 800px;
+    border: 1px solid black;
+}
+.BlackSquare{
+    width:40px;
+    height:360px;
+}
+
+.HorizontalLine {
+    width: 600px;
+    height: 60px;
+}
+
+.HorizontalLine#red {
+    background-color: #FF0018;
+    width: 560px;
+    left:40px;
+}
+
+.HorizontalLine#orange {
+    background-color:  #FFA52C;
+    top:60px;
+    left: 40
+}
+
+.HorizontalLine#yellow {
+    background-color: #FFFF41;
+    top:120px;
+}
+
+.HorizontalLine#green {
+    background-color: #008018;
+    top:180px;
+}
+
+.HorizontalLine#blue {
+    background-color: #0000F9;
+    top:240px;
+}
+
+.HorizontalLine#purple {
+    background-color: #86007D;
+    width: 560px;
+    left:40px;
+    top:300px;
+}
+
+
+.BlackTriangle {
+    width: 0;
+    height: 0;
+    border-top: 180px solid transparent;
+    border-left: 180px solid black;
+    border-bottom: 180px solid transparent;
+    left:40px;
+}
+
+.BrownTriangle {
+    width: 0;
+    height: 0;
+    border-top: 180px solid transparent;
+    border-left: 180px solid #603814;
+    border-bottom: 180px solid transparent;
+    top:0px;
+}
+
+
+.BlueTriangle {
+    width: 0;
+    height: 0;
+    border-top: 140px solid transparent;
+    border-left: 140px solid #75d4ea;
+    border-bottom: 140px solid transparent;
+    top:40px;
+}
+
+.PinkTriangle {
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-left: 100px solid #fdafc5;
+    border-bottom: 100px solid transparent;
+    top:80px;
+}
+
+.WhiteTriangle {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-left: 60px solid #fbf7f4;
+    border-bottom: 60px solid transparent;
+    top:120px;
 }

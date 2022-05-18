@@ -1,4 +1,4 @@
-#container{
+.container{
     /* background-color: rgb(128, 128, 128); */
     margin:100px;
     overflow: hidden; /* this prevents children divs from collapsing */
@@ -6,17 +6,17 @@
 }
 
 /* padding between divs */
-#search, #plus, #create  { 
+.search, .plus, .create  { 
     padding: 20px;
 }
 
-#search button, #plus button, #create button {
+.search button, .plus button, .create button {
     font-size: 150%;
     color:white;
     border: 2px solid;
 }
 
-#search button{
+.search button{
     width: 200px;
     height: 50px;
     color:darkcyan;
@@ -26,7 +26,7 @@
     padding: 0px 50px;
 }
 
-#plus button {
+.plus button {
     background-color: aquamarine;
     font-size:300%;
     border: transparent;
@@ -34,7 +34,7 @@
     padding: 0px 15px;
 }
 
-#create button {
+.create button {
     background-color: royalblue;
     border-color: black;
     box-shadow: 5px 5px black;
