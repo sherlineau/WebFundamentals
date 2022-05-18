@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    height:70px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between; /* goes side to side */
+    align-items: center; /* goes up to down */
+}
+
+.sidebar {
+    /*set ratio of each sidebar 1 side bar is half the size of the main section */
+    flex: 1;
+    height:600px;
+    background-color: aqua;
+
+}
+
+.main {
+        /*set ratio of each sidebar 3 sidebars = 1 main */
+    flex: 3;
+    height: 600px;  /*100vh = ratio of the width of my screen/window */
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.flexbox{
+    display: flex;
+}
+
+.box{
+    margin-top: 10px;
+    width: 100px;
+    height:100px;
+    background-color: yellow;
+}
+
+img {
+    width: 100px;
+    height:100px;
+    object-fit:cover;
+}
+
+.navleft {
+    width: 400px;
+    height: 60px;
+    background-color: beige;
+}
+
+.navright {
+    width: 200px;
+    height: 60px;
+    background-color: green;
+}
