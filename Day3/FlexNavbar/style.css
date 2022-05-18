@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: ghostwhite;
+}
+
+.nav {
+    background-color:#333333;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nav-links {
+    width: 500px;
+    height: 70px;
+    display: flex;
+    list-style-type: none; /*list style type refers to bullet points */
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.nav-links a:hover{
+    opacity: 1;
+}
+
+.nav-links button {
+    padding: 5px 10px;
+    background-color: darkcyan;
+    box-shadow: 2px 2px black;
+}
+
+.nav-links button:hover {
+    padding: 5px 10px;
+    background-color: lightcyan;
+    color: black;
+}
