@@ -21,30 +21,28 @@ h1 {
     text-align: center;
 }
 
-.imgbox {
-    align-items: center;
-    margin: 0px;
-}
-.imgbox img{
+img{
     width: 200px;
     height: 200px;
     object-fit: cover;
 }
 
-
 .darksilver {
     height: 240px;
     background-color: #5d5d5d;
+    align-items: center;
 }
 
 .green{
     height:250px;
     background-color: #2a623d;
+    align-items: center;
 }
 
 .darkgreen {
     height: 250px;
     background-color: #1a472a;
+    align-items: center;
 }
 
 p{
