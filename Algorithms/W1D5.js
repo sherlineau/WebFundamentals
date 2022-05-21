@@ -34,3 +34,18 @@ while(start < end) {
 //Reversing an array
 //write a function to reverse an array given 
 //["a","b","c","d","e"]   =  ["e", "d", "c", "b", "a"];
+
+var arr = ["a","b","c","d","e"];
+
+function Reverse(array) {
+    for (var i = 0; i < arr.length/2; i++) {
+        var temp = arr[arr.length-1-i];
+        arr[arr.length-1-i] = arr[i];
+        arr[i] = temp
+    }
+    console.log(arr);
+}
+
+reversed = Reverse(arr);
+arr1 = [1,2,3,4,5];
+
