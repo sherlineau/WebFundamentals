@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- on click event can be applied to any tag -> alert is a function in javascript 
+    "" this is the confines of the function -->
+    <h1 onclick="alert('this is your first alert')">test</h1>
+    <!-- we want to make a button that increments a count -->
+    
+    <button onclick="counter(this)">1</button>
+    <!-- number is encapsulated in a span so we can now just update the number -->
+    <button onclick="specialCounter()"><span id="number">1</span> like</button>
+    <button onclick="counter(this)">1</button>
+    <button onclick="counter(this)">1</button>
+    <!-- link the script file at the BOTTOM of body tag -->
+    <!-- we want to bring JS LAST so that everything else renders in first -->
+    <!-- can link multiple js files -->
+    <script src="script.js">
+        //we could technically write all our js code here, but it would get messy
+    </script>
+</body>
+</html>

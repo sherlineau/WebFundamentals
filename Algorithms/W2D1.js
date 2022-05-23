@@ -5,8 +5,11 @@ var floor = Math.floor(1.8);
 var ceiling = Math.ceil( Math.PI );
 var random = Math.random();
     
+//lowest integer possible closest to value, 1.8 returns 1, 1.2 returns 1 -> round down
 console.log(floor);
+//highest integer  closest to value -> round up
 console.log(ceiling);
+// logs any number (decimals included) -> random decimal number between 0-1 (1 is excluded)
 console.log(random);
 
 
@@ -16,7 +19,9 @@ console.log(random);
 function d6() {
     var roll = Math.random();
     // your code here
-    return roll;
+    result = Math.floor((Math.random() * 6)+1);
+
+    return result;
 }
     
 var playerRoll = d6();
@@ -48,3 +53,25 @@ var lifesAnswers = [
     "Outlook not so good.",
     "Very doubtful."
 ];
+
+//method 1
+// function randomanswer() {
+//     //using Math.ceil(math.floor(math.random * 6)); has a tiny chance of return 0 which we do not want
+//     var answerIndex = Math.floor(Math.random() * Math.floor(lifesAnswers.length)); 
+//     var answer = lifesAnswers[answerIndex];
+//     return answer;
+// }
+
+// var random = randomanswer();
+// console.log(random);
+
+// method 2
+function oracle(arr) {
+    chance = Math.floor(Math.random() * (arr.length));
+
+    answer = arr[chance];
+    return answer;
+}
+
+// answer = oracle(lifesAnswers);
+console.log(oracle(lifesAnswers));
