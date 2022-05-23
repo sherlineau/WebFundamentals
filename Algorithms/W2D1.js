@@ -73,5 +73,5 @@ function oracle(arr) {
     return answer;
 }
 
-// answer = oracle(lifesAnswers);
+answer = oracle(lifesAnswers);
 console.log(oracle(lifesAnswers));

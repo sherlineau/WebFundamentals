@@ -1,0 +1,32 @@
+* {
+    font-family: 'Macondo', cursive;
+}
+
+#title {
+    text-align: center;
+    text-shadow: 2px 2px grey;
+    color: white;
+}
+
+body {
+    background-image: url('background.jpg');
+}
+
+.content {
+    text-align: center;
+}
+
+#ball {
+    border-radius: 50%;
+}
+
+input {
+    width: 300px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#answer {
+    color: white;
+    background-color: rgba(137, 43, 226, 0.397);
+}

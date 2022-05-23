@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.navbar {
+    background-color: lightgrey;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navleft, .navright {
+    flex:1;
+    margin: 10px;
+}
+
+.navleft h1 {
+    font-size: 4em;
+}
+
+.navmiddle input {
+    width: 400px;
+}
+
+.navmiddle {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.navright {
+    display: flex;
+    justify-content: right;
+}
+
+.navright button {
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.main {
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainleft {
+    flex: 2;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.entrycard {
+    width: 95%;
+    height: 300px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.entryleft {
+    flex:1;
+    height: 90%;
+    margin-left: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.entryleft h1 {
+    font-size: 50px;
+    margin: 5px;
+} 
+.entryleft h2 {
+    font-size: 30px;
+    margin: 5px;
+} 
+.entryleft p {
+    font-size: 25px;
+    margin: 5px;
+
+}
+
+.entryleft button {
+    font-size: 30px;
+    width: 120px;
+    height: 50px;
+    margin: 15px;
+}
+
+.entryright {
+    flex:2;
+    height: auto;
+    max-height: 90%;
+    margin: 0px 10px 0px 10px;
+    font-size: 2vw;
+    text-align: center;
+    overflow-wrap:break-word;
+}
+
+.mainright {
+    flex: 1;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.addDefinition {
+    width: 95%;
+    padding: 15px;
+    height: 250px;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.addDefinition p {
+    font-size: 50px;
+    text-align: center;
+}
+
+.addDefinition button {
+    background-color: green;
+    box-shadow: 5px 5px 5px black;
+    border: none;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.addDefinition button:hover {
+    background-color: lightgreen;
+}
