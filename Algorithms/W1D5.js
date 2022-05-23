@@ -7,16 +7,17 @@ fruit2 = fruit1;
     
 console.log(fruit2 + " and " + fruit1);
 //what do we expect to get back?
+//apples and apples
 
 var fruit1 = "apples";
 var fruit2 = "oranges";
     
-var temp = fruit1; // temp is a common name for this
-fruit1 = fruit2;
-fruit2 = temp;
+var temp = fruit1; // temp is a common name for this  //temp = apples
+fruit1 = fruit2;  //fruit1 = oranges
+fruit2 = temp; //fruit2 = apples
 console.log(fruit2 + " and " + fruit1);
 //what do we get back this time?
-
+//apples and oranges
 
 
 //while loops
@@ -29,6 +30,9 @@ while(start < end) {
     end -= 2;
 }
 
+//start: 0, end: 12
+//start: 2, end: 10
+//start: 4, end: 8
 
 
 //Reversing an array
@@ -47,5 +51,5 @@ function Reverse(array) {
 }
 
 reversed = Reverse(arr);
-arr1 = [1,2,3,4,5];
+
 
