@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    justify-content: center;
+}
+
+.navbar {
+    width: 1000px;
+    height: 60px;
+    margin: 0px auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.header {
+    width: 980px;
+    height: 40px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.main {
+    margin: 0px auto;
+    width: 1000px;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mainleft {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.usercard {
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.usercard img {
+    width: 120px;
+    margin: 60px auto;
+}
+
+.usercard p {
+    margin: 15px auto;
+}
+
+.mainright{
+    justify-content: center;
+}
+
+.post {
+    width: 620px;
+    height: 180px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headingright {
+    display: flex;
+    align-items: center;
+}
+
+.headingright p {
+    font-size: 24px;
+}
+
+.textbox {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    margin-left: 30px;
+    font-size: 24px;
+    background-color: yellow;
+    box-shadow: 3px 3px black;
+}
