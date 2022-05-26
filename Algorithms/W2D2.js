@@ -1,19 +1,20 @@
 //What are objects?
 //used for storing an objects "properties", instead of writing individual variables for each property
+//aka keys and values 
 //monsterID =  monster.id;
 //monsterName = monster.name
 
-var monster = {
-    id: 1,
-    name: "Bulbasaur",
-    types: ["poison", "grass"]
-};
+// var monster = {
+//     id: 1,
+//     name: "Bulbasaur",
+//     types: ["poison", "grass"]
+// };
 
-// Using the monster variable above how could we access the name?
-console.log("Name: " + monster.name);
-// Using the monster variable above how could we access the 2nd type?
-// just like accessing an array index types[0] = poison   types[1] = grass
-console.log("Type: " + monster.types[1]);
+// // Using the monster variable above how could we access the name?
+// console.log("Name: " + monster.name + " " + monster.types);
+// // Using the monster variable above how could we access the 2nd type?
+// // just like accessing an array index types[0] = poison   types[1] = grass
+// console.log("Type: " + monster.types[1]);
 
 
 //
@@ -45,30 +46,31 @@ var pokémon = [
     { "id": 148, "name": "Dragonair",  "types": ["dragon"] }
 ];
 
-// console logs pokemon with ids greater than 99
-for(var i=0; i<pokémon.length; i++) {
-    if(pokémon[i].id > 99) {
-        console.log(pokémon[i].name);
-    }
-}
+// // // console logs pokemon with ids greater than 99
+// for(var i=0; i<pokémon.length; i++) {
+//     if(pokémon[i].id > 99) {
+//         console.log(pokémon[i].name);
+//     }
+// }
 
-//console.log the pokémon objects whose id is evenly divisible by 3
-for(var i = 0; i < pokémon.length; i++) {
-    if(pokémon[i].id % 3 == 0) {
-        console.log(pokémon[i].name);
-    }
-}
+// //console.log the pokémon objects whose id is evenly divisible by 3
+// for(var i = 0; i < pokémon.length; i++) {
+//     if(pokémon[i].id % 3 == 0) {
+//         console.log(pokémon[i].name);
+//     }
+// }
 
-//console.log the pokémon objects that have more than one type
-for(var i = 0; i< pokémon.length; i++) {
-    if(pokémon[i].types.length > 1) {
-        console.log(pokémon[i].name)
-    }
-}
+// //console.log the pokémon objects that have more than one type
+// for(var i = 0; i< pokémon.length; i++) {
+//     if(pokémon[i].types.length > 1) {
+//         console.log(pokémon[i].name)
+//     }
+// }
 
 //console.log the names of the pokémon whose only type is "poison"
 for(var i = 0; i< pokémon.length; i++) {
-    if(pokémon[i].types.length < 2 && pokémon[i].types == "poison" ) {
+    // if(pokémon[i].types.length < 2 && pokémon[i].types == "poison" ) 
+    if (pokémon[i].types.length < 2 && pokémon[i].types[0] === "poison" ) {
         console.log(pokémon[i].name)
     }
 }
@@ -76,15 +78,15 @@ for(var i = 0; i< pokémon.length; i++) {
 
 //console.log the first type of all the pokémon whose second type is "flying"
 for(var i = 0; i < pokémon.length; i++) {     
-    if(pokémon[i].types[1] == 'flying') {
-        console.log(pokémon[i].name);
+    if(pokémon[i].types.length === 2 && pokémon[i].types[1] === 'flying') {
+        console.log(pokémon[i].types[0]);
     }
 }
 
 //console.log the reverse of the names of the pokémon whose only type is "poison"
 for(var i = 0; i< pokémon.length; i++) {
-    if(pokémon[i].types.length < 2 && pokémon[i].types == "poison" ) {
-        console.log(pokémon[i].name);     //console logs the pokemon in index
+    if(pokémon[i].types.length < 2 && pokémon[i].types[0] === "poison" ) {
+        console.log(pokémon[i].name);     //console logs the pokemon name in index
         var pokéname = pokémon[i].name;   //assigns .name to a string var pokename
         var arr = pokéname.split("");     //splits pokename into an array
         reverse = arr.reverse();          //reverses the array
@@ -92,3 +94,17 @@ for(var i = 0; i< pokémon.length; i++) {
         console.log(output);              //console logs the reverse
     }
 }
+
+for( var i = 0; i< pokémon.length; i++ ) {
+    if(pokémon[i].types[0] == "poison") {
+        var temp = "";
+        for (var k = pokémon[i].name.length - 1 ; k >= 0 ; k--) {
+            temp += pokémon[i]
+        }
+    }
+}
+
+//can traverse through a string like an array
+var test = "Test";
+console.log(test[0]); 
+//console logs: T
