@@ -36,7 +36,7 @@
                 </div>
         
                 <div class="description">
-                        <h1>Aloy</h1>
+                        <h1 id="name">Aloy</h1>
                         <div class="locationbox">
                             <img src="images/map-marker.png" alt="map marker">
                             <h3>Mother's Cradle</h3>
@@ -45,8 +45,8 @@
                         <p>Constantly having to save the world from self-destruction. Can't even take a moment to breathe.</p>
         
                         <div class="editprofilebox">
-                            <img src="images/gear.png" alt="edit profile">
-                            <a href="#">edit settings</a>
+                            <img src="images/gear.png" alt="edit profile" onclick="changeName()">
+                            <p onclick="changeName()">edit settings</p>
                         </div>
                 </div>
             </div>
@@ -72,24 +72,24 @@
                     <h1 class="number">2</h1>
                     <h2>Friend Requests</h2>
                 </div>
-                <div class="request">
+                <div class="request" id="removed">
                     <div class="left">
                         <img src="images/Zo.webp" alt="zo" class="friends">
                         <h2> Zo</h2>
                     </div>
                     <div class="right">
-                        <h1>&#10004;</h1>
-                        <h1>&#10006;</h1>
+                        <img src="images/accept-circle.png" alt="accept" onclick="removeMe(this)">
+                        <img src="images/close-circle.png" alt="deny" onclick="removeMe(this)">
                     </div>
                 </div>
-                <div class="request">
+                <div class="request" id="removed">
                     <div class="left">
                         <img src="images/Kotallo.webp" alt="Kotallo" class="friends">
                         <h2>Kotallo</h2>
                     </div>
                     <div class="right">
-                        <h1>&#10004;</h1>
-                        <h1>&#10006;</h1>
+                        <img src="images/accept-circle.png" alt="accept" onclick="removeMe(this)">
+                        <img src="images/close-circle.png" alt="deny" onclick="removeMe(this)">
                     </div>
                 </div>
             </div>
@@ -100,47 +100,25 @@
                 </div>
 
                 <div class="request">
-                    <div class="left">
                         <img src="images/rost.bmp" alt="Rost" class="friends">
                         <h2>Rost</h2>
-                    </div>
-                    <div class="right">
-                        <h1>&#10004;</h1>
-                        <h1>&#10006;</h1>
-                    </div>
                 </div>
 
                 <div class="request">
-                    <div class="left">
                         <img src="images/varl.webp" alt="Varl" class="friends">
                         <h2>Varl</h2>
-                    </div>
-                    <div class="right">
-                        <h1>&#10004;</h1>
-                        <h1>&#10006;</h1>
-                    </div>
+
                 </div>
 
                 <div class="request">
-                    <div class="left">
                         <img src="images/erend.jpg" alt="Erend" class="friends">
                         <h2>Erend</h2>
-                    </div>
-                    <div class="right">
-                        <h1>&#10004;</h1>
-                        <h1>&#10006;</h1>
-                    </div>
+
                 </div>
 
                 <div class="request">
-                    <div class="left">
                         <img src="images/Talanah_Khane_Padish.webp" alt="Talanah" class="friends">
                         <h2>Talanah</h2>
-                    </div>
-                    <div class="right">
-                        <h1>&#10004;</h1>
-                        <h1>&#10006;</h1>
-                    </div>
                 </div>
                 
             </div>

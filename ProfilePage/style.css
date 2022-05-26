@@ -156,6 +156,8 @@ body {
 .editprofilebox{
     display: flex;
     align-items: center;
+    color: blue;
+    text-decoration: underline;
 }
 
 .editprofilebox img {
@@ -230,9 +232,10 @@ body {
 }
 
 .request{ 
-    justify-content: center;
+    justify-content: left;
     height: 80px;
 }
+
 .request, .request .left, .request .right{
     width: 100%;
     padding: 25px;
@@ -252,15 +255,10 @@ body {
     width: 20%;
 }
 
-.request .right h1 {
+.request .right img {
     margin: 5px;
-    background-color: grey;
     width: 50px;
     height: 50px;
-    text-align: center;
-    border-radius: 50%;
-    justify-content: center;
-    color: ghostwhite;
 }
 
 .friends {
@@ -275,5 +273,6 @@ body {
 
 .friends {
     border-radius: 50%;
-    margin-right: 30px;
+    margin: 0px 30px;
+
 }
