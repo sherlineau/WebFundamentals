@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <!-- navigation bar -->
+    <div class="navbar">
+        <div class="navleft">
+            <h1>PROFILE</h1>
+            <ul class="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+            </ul>
+        </div>
+        <div class="navright">
+            <button onclick="alert('User Signed Out')">Sign Out</button>
+        </div>
+    </div>
+
+
+    <!-- cookies bar -->
+    <div class="cookiecontainer" id="cookies">
+        <div class="cookiebox">
+            <!-- <img src="images/cookie.png" alt="cookie"> -->
+            <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the terms outlined in our <a href="#">cookie policy</a>.</p>
+            <button onclick="removeMe(this)">I Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

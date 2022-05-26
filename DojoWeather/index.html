@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="left">DojoWeather</h1>
+        <ul class="right">
+            <li onclick="alert('Loading weather report...')">Burbank</li>
+            <li onclick="alert('Loading weather report...')">Chicago</li>
+            <li onclick="alert('Loading weather report...')">Dallas</li>
+        </ul>
+    </div>
+    <div class="header">
+        <h1>San Jose</h1>
+        <div class="temperature">
+            <p>show temperature in </p>
+            <select name="temperature" id="temp" >
+                <option>&#8451;</option>
+                <option>&#8457;</option>
+            </select>
+        </div>
+    </div>
+    <div class="main">
+        <div class="date">
+            <h2>Today</h2>
+            <img src="images/some_rain.png" alt="rainy">
+            <p>some rain</p>
+            <div class="highlow">
+                <h3 class="high">24&#176;</h3>
+                <h3 class="low">18&#176;</h3>
+            </div>
+        </div>
+        <div class="date">
+            <h2>Tomorrow</h2>
+            <img src="images/some_sun.png" alt="sunny">
+            <p>some sun</p>
+            <div class="highlow">
+                <h3 class="high">27&#176;</h3>
+                <h3 class="low">19&#176;</h3>
+            </div>
+            
+        </div>
+        <div class="date">
+            <h2>Friday</h2>
+            <img src="images/some_clouds.png" alt="cloudy">
+            <p>some clouds</p>
+            <div class="highlow">
+                <h3 class="high">21&#176;</h3>
+                <h3 class="low">16&#176;</h3>
+            </div>
+            
+        </div>
+        <div class="date">
+            <h2>Saturday</h2>
+            <img src="images/some_sun.png" alt="sunny">
+            <p>some sun</p>
+            <div class="highlow">
+                <h3 class="high">26&#176;</h3>
+                <h3 class="low">21&#176;</h3>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="cookiecontainer" id="cookies">
+        <div class="cookiebox">
+            <img src="images/cookie.png" alt="cookie">
+            <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the terms outlined in our <a href="#">cookie policy</a>.</p>
+            <button onclick="removeMe(this)">I Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
